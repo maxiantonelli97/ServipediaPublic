@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Servipedia" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark</item>
+        <item name="colorPrimaryVariant">@color/dark</item>
+        <item name="colorOnPrimary">@color/dark</item>
+        <item name="colorControlNormal">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark</item>
+        <item name="colorSecondaryVariant">@color/dark</item>
+        <item name="colorOnSecondary">@color/dark</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:textColorAlertDialogListItem">@color/darkness</item>
+        <item name="android:alertDialogStyle">@color/dark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:backgroundTint">@color/claro</item>
+        <item name="android:textColorSecondary">@color/darkness</item>
+        <item name="android:textColor">@color/darkness</item>
+        <item name="android:textColorPrimary">@color/darkness</item>
+    </style>
+
+    <style name="searchBar" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.Servipedia.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Servipedia.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    <style name="Theme.Servipedia.PopupOverlay" parent="ThemeOverlay.AppCompat.DayNight" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground"> @color/black </item>
+        <item name="windowSplashScreenAnimatedIcon"> @mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme"> @style/Theme.Servipedia </item>
+    </style>
+</resources>

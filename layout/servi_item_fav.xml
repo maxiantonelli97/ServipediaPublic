@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkness">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/claro"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_servipedia" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/name"
+                android:textColor="@color/darkness"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/tv_desc"
+                app:layout_constraintEnd_toStartOf="@id/iv_instagram"
+                app:layout_constraintStart_toEndOf="@id/iv_logo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:hint="@string/descripcion"
+                android:textColor="@color/darkness"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/tv_address"
+                app:layout_constraintEnd_toStartOf="@id/iv_instagram"
+                app:layout_constraintStart_toEndOf="@id/iv_logo"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:hint="@string/address"
+                android:textColor="@color/darkness"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toStartOf="@id/iv_instagram"
+                app:layout_constraintStart_toEndOf="@id/iv_logo"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+            <ImageView
+                android:id="@+id/iv_wsp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="15dp"
+                android:contentDescription="@string/whatsapp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iv_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_address"
+                card_view:srcCompat="@drawable/ic_wsp" />
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="15dp"
+                android:contentDescription="@string/phone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iv_map"
+                app:layout_constraintStart_toEndOf="@id/iv_wsp"
+                app:layout_constraintTop_toBottomOf="@id/tv_address"
+                card_view:srcCompat="@drawable/ic_phone" />
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="15dp"
+                android:contentDescription="@string/ubicacion"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iv_instagram"
+                app:layout_constraintStart_toEndOf="@id/iv_phone"
+                app:layout_constraintTop_toBottomOf="@id/tv_address"
+                card_view:srcCompat="@drawable/ic_map" />
+
+            <ImageView
+                android:id="@+id/iv_instagram"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="15dp"
+                android:contentDescription="@string/instagram"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_map"
+                app:layout_constraintTop_toBottomOf="@id/tv_address"
+                card_view:srcCompat="@drawable/ic_insta" />
+
+            <ImageView
+                android:id="@+id/iv_favorito"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="20dp"
+                android:contentDescription="@string/favorito"
+                app:layout_constraintEnd_toEndOf="@id/iv_instagram"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/ic_baseline_favorite_black_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444447"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
