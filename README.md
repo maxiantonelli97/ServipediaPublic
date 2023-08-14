@@ -1,4 +1,6 @@
-SERVIPEDIA a service's guide for Rosario.
+# SERVIPEDIA
+
+A service's guide for Rosario.
 
 With this app you can filter by category and find the service you are looking for, and rate them.
 
